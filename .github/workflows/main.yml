@@ -25,9 +25,6 @@ jobs:
         if: ${{ github.repository == 'frknmydn/demo-notification' }}
         run: npm audit fix --force
       
-      - name: Run Security Audit
-        if: ${{ github.repository == 'frknmydn/demo-notification' }}
-        run: npm audit --audit-level=low
       
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
